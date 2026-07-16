@@ -8,7 +8,7 @@ Google Gemini를 활용해 사용자의 고민과 감정을 분석하고,
 기존 AI가 고민에 대한 답을 제시했다면,
 **새김은 사용자가 고민을 극복한 미래를 먼저 체험하는 새로운 인터랙티브 경험**을 제공합니다.
 
-![새김 메인 화면](screenshots/00_main.png)
+<img src="screenshots/00_main.png" width="400" />
 
 ---
 
