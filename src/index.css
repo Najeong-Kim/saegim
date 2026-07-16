@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Noto+Serif+KR:wght@300;400;600;700&family=Orbitron:wght@400;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+@font-face {
+  font-family: 'DungGeunMo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/DungGeunMo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Galmuri11';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.1/Galmuri11.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans KR", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Noto Serif KR", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Orbitron", sans-serif;
+  --font-pixel: "DungGeunMo", "Galmuri11", monospace;
+}
+
+@layer utilities {
+  /* Neon blink effect for Cyberpunk */
+  .neon-text-cyan {
+    text-shadow: 0 0 5px rgba(0, 240, 255, 0.6), 0 0 10px rgba(0, 240, 255, 0.4);
+  }
+  .neon-text-magenta {
+    text-shadow: 0 0 5px rgba(255, 0, 127, 0.6), 0 0 10px rgba(255, 0, 127, 0.4);
+  }
+  .neon-border-cyan {
+    box-shadow: 0 0 8px rgba(0, 240, 255, 0.3), inset 0 0 8px rgba(0, 240, 255, 0.2);
+  }
+  
+  /* Retro Game Style Double Pixel Borders */
+  .pixel-border-double {
+    border: 4px double #2c1b18;
+    box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.25);
+  }
+
+  .pixel-btn-shadow {
+    box-shadow: 0 4px 0px 0px rgba(0,0,0,0.3);
+  }
+}
+
+/* Retro Pixel Shimmer & Scanline overlay */
+.retro-scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.12) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.04),
+    rgba(0, 255, 0, 0.02),
+    rgba(0, 0, 255, 0.04)
+  );
+  background-size: 100% 3px, 3px 100%;
+}
+
+/* Subtle background animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s ease-in-out infinite;
+}
+
+/* Traditional Korean style geometric background helper pattern */
+.bg-traditional {
+  background-image: radial-gradient(circle at 1px 1px, rgba(178, 34, 34, 0.05) 1px, transparent 0);
+  background-size: 16px 16px;
+}
+

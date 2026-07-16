@@ -1,0 +1,6 @@
+{
+  "name": "내 고민이, 내가 주인공인 게임이 된다",
+  "description": "사용자의 현실 고민을 한국적 세계관의 인터랙티브 게임으로 바꾸고, 사용자가 주인공이 되어 성공한 미래를 직접 체험하게 하는 AI 엔터테인먼트 서비스 (Turn your worries into a playable story)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
