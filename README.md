@@ -1,20 +1,165 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# 🌸 새김 (Saegim)
 
-# Run and deploy your AI Studio app
+> **당신의 고민을, 당신만의 모험으로 새기다.**
 
-This contains everything you need to run your app locally.
+Google Gemini를 활용해 사용자의 고민과 감정을 분석하고,
+한국적인 세계관 속 개인화된 인터랙티브 스토리와 엔딩 이미지를 생성하는 AI 엔터테인먼트 서비스입니다.
 
-View your app in AI Studio: https://ai.studio/apps/cef1c483-3dd2-4027-9e29-3aaf12ef37ba
+기존 AI가 고민에 대한 답을 제시했다면,
+**새김은 사용자가 고민을 극복한 미래를 먼저 체험하는 새로운 인터랙티브 경험**을 제공합니다.
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## ✨ Inspiration
 
+발표, 면접, 새로운 도전처럼 중요한 순간을 앞두고
+우리는 종종 **실패한 모습**을 먼저 상상합니다.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+이미지 트레이닝(Visualization)은 이러한 불안을 줄이는 데 도움이 되는 방법으로 알려져 있지만,
+혼자서는 생생한 미래를 상상하기 어렵습니다.
+
+새김은 Google Gemini를 활용하여
+
+> **"답을 알려주는 AI"가 아니라,
+> "미래를 먼저 살아보게 하는 AI"**
+
+를 만들고자 했습니다.
+
+---
+
+## 🎮 How it Works
+
+1. 고민을 입력합니다.
+2. 세계관을 선택합니다.
+   - 🏯 조선 판타지
+   - 🌸 서울 2026
+   - 🤖 K-Cyberpunk
+3. Gemini가 감정을 분석합니다.
+4. 나를 상징하는 수호동물을 선택합니다.
+5. AI가 개인화된 이야기를 생성합니다.
+6. 세 번의 선택을 통해 이야기를 진행합니다.
+7. 고민을 극복한 미래의 엔딩 이미지가 생성됩니다.
+
+---
+
+## 🌏 Why is it different?
+
+### 기존 게임
+
+사용자는 **정해진 주인공**의 이야기를 플레이합니다.
+
+### 새김
+
+사용자의 **실제 고민이 이야기의 시작**이 됩니다.
+
+Google Gemini는
+
+- 고민 분석
+- 감정 분석
+- 스토리 생성
+- 선택지 생성
+- 엔딩 이미지 생성
+
+을 통해
+
+**사용자가 직접 주인공이 되는 콘텐츠**를 만들어냅니다.
+
+---
+
+## 🎨 Korean Entertainment Experience
+
+새김은 한국적인 세계관을 기반으로 합니다.
+
+### 🏯 조선 판타지
+
+전통 설화와 신비로운 수호령이 살아있는 세계
+
+### 🌸 서울 2026
+
+오늘의 서울을 따뜻한 청춘 드라마처럼 표현한 세계
+
+### 🤖 K-Cyberpunk
+
+한국의 전통과 미래 기술이 공존하는 서울
+
+또한 사용자는 감정에 따라
+
+- 🐯 호랑이
+- 🐻 반달가슴곰
+- 🐦 까치
+
+중 하나의 수호동물로 표현됩니다.
+
+---
+
+## 🤖 Google AI
+
+새김은 Google Gemini를 활용하여
+
+- 감정 분석
+- 개인화된 스토리 생성
+- 인터랙티브 선택지 생성
+- 이미지 생성 프롬프트 생성
+- 최종 엔딩 이미지 생성
+
+을 수행합니다.
+
+---
+
+## 💡 Tech Stack
+
+- React + TypeScript
+- Vite
+- Tailwind CSS
+- Express
+- Google Gemini (`@google/genai`)
+
+---
+
+## 🚀 Getting Started
+
+**Prerequisites:** Node.js
+
+1. 의존성 설치:
+   ```bash
+   npm install
+   ```
+2. `.env` 파일에 Gemini API 키 설정:
+   ```
+   GEMINI_API_KEY=your_api_key_here
+   ```
+3. 개발 서버 실행:
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## 📸 Demo
+
+| 고민 입력 | 스토리 시작 |
+|:---------:|:-----------:|
+| ![고민 입력](screenshots/01_worry_input.png) | ![스토리 시작](screenshots/04_story_start.png) |
+
+| 스토리 진행 (STAGE 1/3) | 엔딩 화면 |
+|:-----------------------:|:---------:|
+| ![스토리 진행](screenshots/05_story_stage.png) | ![엔딩](screenshots/06_ending.png) |
+
+---
+
+## 🚀 Future Works
+
+- 다양한 장르(영화 / 게임 / 애니메이션)
+- 더 많은 한국 설화 세계관
+- 엔딩 이미지 공유 기능
+- 나만의 모험 컬렉션
+
+---
+
+## ❤️ Our Message
+
+> **기존 AI는 고민에 대한 답을 제시합니다.**
+>
+> **새김은 고민을 극복한 미래를 먼저 경험하게 합니다.**
+
+**당신의 고민을, 당신만의 모험으로 새기다.**
